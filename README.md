@@ -24,6 +24,8 @@ Every tool a company needs from an IT perspective, using open-source equivalents
 | **Notifications** | [Apprise](https://github.com/caronc/apprise) | Unified alerting to Slack, Telegram, email, etc. |
 | **Source Control** | [Gitea](https://gitea.io) | Self-hosted Git with CI/CD, code review, packages |
 | **Backup** | [Restic + Autorestic](https://restic.net) | Encrypted incremental backups to local or cloud |
+| **File Sync** | [Sync-in](https://github.com/Sync-in/server) | Self-hosted cross-device file synchronization server |
+| **File Sharing** | [Locker](https://github.com/zmeyer44/Locker) | Dropbox-style file system on own S3/R2/local storage |
 
 ## AI Agent Layer
 
