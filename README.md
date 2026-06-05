@@ -52,6 +52,14 @@ The differentiator. An AI agent mesh sits on top of the entire stack and handles
 | [agents-observe](https://github.com/simple10/agents-observe) | Real-time agent execution visibility, tool call tracing |
 | [Docmost](https://github.com/docmost/docmost) | Collaborative wiki for runbooks, SOPs, IT knowledge base |
 
+### Reference Architecture
+
+| Project | What it demonstrates |
+|---|---|
+| [Infra AI IT Team Runbook](https://github.com/Mfrostbutter/Infra-AI-IT-Team-Runbook) | 11 specialized agents (8 infra + 3 cyber) running self-hosted stack — tiered haiku/sonnet/opus model routing, append-only change journal, machine-identity secrets |
+
+Key pattern to adopt: **specialist agents (80–150 lines each) dispatched by intent**, not one monolithic agent. Cost math only works at daily use with specialists. Default fleet: 7× haiku · 5× sonnet · opus reserved for multi-domain incidents only.
+
 ## Deployment
 
 Target: single-server or small cluster. Docker Compose first, Kubernetes optional.
